@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Carrito de la compra</h1>
+
+        <div id="presentacio">
+            <h2>Aplicación para comprar fruta</h2>
+            <p id=" infoApp">Elige la fruta que deseas haciendo click sobre su imagen.</p>
+
+        </div>
+
+        <div id="frutas" class="fruites">
+            <div>
+                <img class="imatges" src="img/aranja.png" alt="Aranja" onclick="comprar(0)">
+                <p onclick="comprar(0)">Pomelo : 2,50€/kg</p>
+            </div>
+            <div>
+                <img class="imatges" src="img/kiwi.png" alt="Kiwi" onclick="comprar(1)">
+                <p onclick="comprar(1)">Kiwi : 4,20€/kg</p>
+            </div>
+            <div>
+                <img class="imatges" src="img/llimones.png" alt="Llimones" onclick="comprar(2)">
+                <p onclick="comprar(2)">Limón : 1,20€/kg</p>
+            </div>
+            <div>
+                <img class="imatges" src="img/pinya.png" alt="Pinya" onclick="comprar(3)">
+                <p onclick="comprar(3)">Piña : 2.8€/ud</p>
+            </div>
+            <div>
+                <img class="imatges" src="img/sindria.png" alt="Sindria" onclick="comprar(4)">
+                <p onclick="comprar(4)">Sandía: 1,20€/kg</p>
+            </div>
+        </div>
+
+
+        <div>
+            <h2 id="tituloCarrito">Total carrito:</h2>
+            <p id="carrito"></p>
+            <button id="terminar" onclick="terminarCompra()" >terminar</button>
+            <p id="totalCompra"></p>
+
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <script src="js/carrito.js"></script>
+
+</body>
+
+</html>
